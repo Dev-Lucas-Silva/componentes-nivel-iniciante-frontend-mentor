@@ -1,0 +1,158 @@
+body {
+  margin: 0px;
+  font-family: "Overpass", Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 0.9375rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.interactive-rating-bg {
+  background-color: hsl(216, 12%, 8%);
+  padding: 150px calc((100% - 375px) / 2);
+}
+
+
+.container {
+  background-color: hsl(213, 19%, 18%);
+  padding: 30px;
+  border-radius: 30px;
+  display: grid;
+}
+
+
+.estrela-img {
+  background-color: hsl(213, 19%, 20%);
+  display: inline;
+  padding: 15px;
+  border-radius: 50%;
+  margin-bottom: 35px;
+  justify-self: start;
+}
+
+.container h1 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 25px;
+}
+
+.container p {
+  color: hsl(217, 12%, 63%);
+  margin-bottom: 35px;
+  max-width: 35ch;
+}
+
+.classificacao {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 15px;
+}
+
+.classificacao label {
+  background-color: hsl(213, 19%, 20%);
+  color: hsl(216, 12%, 54%);
+  width: 50px;
+  padding: 15px 0;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.classificacao label:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+input[type="radio"]:checked + label {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+}
+
+input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.classificacao button {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  padding: 15px 0;
+  border-radius: 30px;
+  grid-column: 1 / -1;
+  text-transform: uppercase;
+  font: 700 bold;
+  letter-spacing: 0.15rem;
+  margin-top: 35px;
+  cursor: pointer;
+  border: none;
+}
+
+.classificacao button:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.container-resposta {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.container-resposta img {
+  margin-bottom: 30px;
+}
+
+.container-resposta p:nth-child(2) {
+  color: hsl(25, 97%, 53%);
+  padding: 10px 20px;
+  background-color: hsl(213, 19%, 20%);
+  border-radius: 30px;
+}
+
+@media (max-width: 400px) {
+  .interactive-rating-bg {
+    padding: 150px 10px;
+  }
+  .container {
+    padding: 20px;
+  }
+  .estrela-img,.container h1 {
+    margin-bottom: 20px;
+  }
+  .container p {
+    margin-bottom: 25px;
+    max-width: 31ch;
+
+  }
+  .classificacao button {
+    margin-top: 25px;
+  }
+}

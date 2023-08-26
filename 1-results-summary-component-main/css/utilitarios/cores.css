@@ -1,0 +1,66 @@
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+:root {
+  /*colors*/
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  /*Primary*/
+  --Light-slate-blue-background: hsl(252, 100%, 67%);
+  --Light-royal-blue-background: hsl(241, 81%, 54%);
+  /*gradients*/
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 1);
+  /*neutral*/
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+
+.Light-red {
+  color: var(--Light-red);
+}
+.Light-red {
+  color: var(--Light-red);
+}
+
+.Orangey-yellow {
+  color: var(--Orangey-yellow);
+}
+.Orangey-yellow {
+  color: var(--Orangey-yellow);
+}
+
+.Green-teal {
+  color: var(--Green-teal);
+}
+.Cobalt-blue {
+  color: var(--Cobalt-blue);
+}
+.Light-slate-blue-background {
+  color: var(--Light-slate-blue-background);
+}
+.Light-royal-blue-background {
+  color: var(--Light-royal-blue-background);
+}
+
+.White {
+  color: var(--White);
+}
+.Pale-blue {
+  color: var(--Pale-blue);
+}
+.Light-lavender {
+  color: var(--Light-lavender);
+}
+.Dark-gray-blue {
+  color: var(--Dark-gray-blue);
+}
+

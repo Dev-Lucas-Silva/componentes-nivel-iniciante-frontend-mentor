@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <script>document.documentElement.className += ' js';</script>
+
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <main class="interactive-rating-bg">
+    <a style="text-decoration: underline;" href="https://github.com/Dev-Lucas-Silva/projetos-nivel-iniciante/tree/main/1-results-summary-component-main">Link para repositório no GitHub</a>
+    <div class="container">
+      <div class="estrela-img"><img src="./images/icon-star.svg" alt="estrela"></div>
+      <h1>How did we do?</h1>
+      <p> Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+      <form class="classificacao" id="form">
+        <div class="classificacao-detalhe buttons">
+          <input type="radio" name="rating" value="1" id="button-1" >
+          <label for="button-1">1</label>
+        </div>
+        <div class="classificacao-detalhe">
+          <input type="radio" name="rating" value="2" id="button-2">
+          <label for="button-2">2</label>
+        </div>
+        <div class="classificacao-detalhe">
+          <input type="radio" name="rating" value="3" id="button-3" required>
+          <label for="button-3">3</label>
+        </div>
+        <div class="classificacao-detalhe">
+          <input type="radio" name="rating" value="4" id="button-4">
+          <label for="button-4">4</label>
+        </div>
+        <div class="classificacao-detalhe">
+          <input type="radio" name="rating" value="5" id="button-5">
+          <label for="button-5">5</label>
+        </div>
+        <button class="submit-button" type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
