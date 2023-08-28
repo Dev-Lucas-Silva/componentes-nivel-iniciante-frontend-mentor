@@ -36,7 +36,7 @@ img {
 
 .interactive-rating-bg {
   background-color: hsl(216, 12%, 8%);
-  padding: 150px calc((100% - 375px) / 2);
+  padding: 120px calc((100% - 375px) / 2);
 }
 
 
