@@ -4,10 +4,16 @@ body {
 }
 
 p {
-  font-size: 1,125rem;
+  font-size: 1, 125rem;
 }
 
-h1, h2, h3, h4, h5, p, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
   margin: 0px;
   padding: 0px;
 }
@@ -28,7 +34,6 @@ img {
   display: block;
 }
 
-
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -45,7 +50,7 @@ img {
   text-align: center;
   background: linear-gradient(
     var(--Violet-blue-circle),
-    var(--Persian-blue-circle) 
+    var(--Persian-blue-circle)
   );
 }
 
@@ -79,7 +84,7 @@ img {
 }
 
 .summary {
-  padding: 40px ;
+  padding: 40px;
 }
 
 .summary h3 {
@@ -122,7 +127,7 @@ img {
 }
 
 .summary a {
-  background-color:hsl(228, 45%, 44%);
+  background-color: hsl(228, 45%, 44%);
   color: white;
   display: block;
   text-align: center;
@@ -132,7 +137,6 @@ img {
 
 .summary a:hover {
   background-color: var(--Dark-gray-blue);
-
 }
 
 @media (max-width: 600px) {
@@ -144,6 +148,6 @@ img {
   }
   .result {
     border-radius: 0px 0px 40px 40px;
+    padding-top: 60px;
   }
 }
-

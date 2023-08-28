@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css.css">
+  <link rel="stylesheet" href="./style.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -18,45 +18,51 @@
 <body>
   <main class="main-bg">
     <a style="text-decoration: underline;color: #ffffff; position: absolute; top: 0;left: 0;" href="https://github.com/Dev-Lucas-Silva/projetos-nivel-iniciante/tree/main/3-faq-accordion-card-main">Link para repositório no GitHub</a>
+    <a style="margin-left: 300px;text-decoration: underline;color: #ffffff;position: absolute;top: 0;left: 0;" href="../index.html">Voltar</a>
+
 
     <div class="container">
       <div class="contain-img">
         <img src="./images/illustration-box-desktop.svg" alt="illustration-box" width="191" height="184">
-        
+
       </div>
       <div class="contain-faq">
         <h1>FAQ</h1>
-        <dl>
-          <dt>How many team members can I invite?
-          </dt>
-          <dd>You can invite up to 2 additional users on the Free plan. There is no limit on
-            team members for the Premium plan.</dd>
-          <dt>
-            What is the maximum file upload size?
-          </dt>
-          <dd>
-            No more than 2GB. All files in your account must fit your allotted storage space.
-          </dd>
-          <dt>
-            How do I reset my password?
-          </dt>
-          <dd>
-            Click “Forgot password” from the login page or “Change password” from your profile page.
-            A reset link will be emailed to you.
-          </dd>
-          <dt>
-            Can I cancel my subscription?
-          </dt>
-          <dd>
-            Yes! Send us a message and we’ll process your request no questions asked.
-          </dd>
-          <dt>
-            Do you provide additional support?
-          </dt>
-          <dd>
-            Chat and email support is available 24/7. Phone lines are open during normal business hours.
-          </dd>
-        </dl>
+        <ul>
+          <li>
+            <input type="checkbox" name="1" id="1">
+            <label for="1">How many team members can I invite?</label>
+            <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+          </li>
+          <li> <input type="checkbox" name="2" id="2">
+            <label for="2">What is the maximum file upload size?</label>
+            <p>
+              No more than 2GB. All files in your account must fit your allotted storage space.
+            </p>
+          </li>
+          <li>
+            <input type="checkbox" name="3" id="3">
+            <label for="3">How do I reset my password?</label>
+            <p>
+              Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.
+            </p>
+          </li>
+          <li>
+            <input type="checkbox" name="4" id="4">
+            <label for="4">Can I cancel my subscription?</label>
+            <p>
+              Yes! Send us a message and we’ll process your request no questions asked.
+            </p>
+          </li>
+          <li>
+            <input type="checkbox" name="5" id="5">
+            <label for="5">Do you provide additional support?</label>
+            <p>
+              Chat and email support is available 24/7. Phone lines are open during normal business hours.
+            </p>
+          </li>
+        </ul>
       </div>
     </div>
   </main>
