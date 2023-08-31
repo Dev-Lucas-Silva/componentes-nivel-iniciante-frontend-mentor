@@ -47,6 +47,8 @@ main {
 }
 
 .container {
+  box-sizing: border-box;
+  padding: 0 15px;
   max-width: 730px;
   margin: 0 auto;
   display: grid;
@@ -136,12 +138,12 @@ main {
 
 
 
-
-
-@media (max-width: 400px) {
+@media (max-width: 800px) {
   .container {
     grid-template-columns: 1fr;
-
+  }
+  .img {
+    height: 300px;
   }
   .img img {
     border-radius: 15px 15px 0 0;
@@ -153,4 +155,9 @@ main {
     border-radius: 0 0 15px 15px;
  
   }
+
+
+}
+
+@media (max-width: 400px) {
 }
