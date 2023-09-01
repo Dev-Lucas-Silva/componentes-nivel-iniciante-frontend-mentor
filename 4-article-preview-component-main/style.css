@@ -90,7 +90,7 @@ main {
   border-radius: 50px;
 }
 
-.share button {
+button {
   width: 30px;
   height: 30px;
   border: none;
@@ -100,6 +100,23 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 15px;
+  position: absolute;
+  bottom: 45px;
+  right: 40px;
+}
+
+.button-ativo {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background: var(--Very-Dark-Grayish-Blue);
+  background-image: url("./images/icon-share-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+
 }
 
 .share-redes {
@@ -117,6 +134,10 @@ main {
   display: none;
 }
 
+.share-ativo {
+  display: grid;
+}
+
 .share-redes a {
   text-transform: uppercase;
 }
@@ -130,12 +151,11 @@ main {
   display: block;
   width: 25px;
   height: 25px;
-  top: 45px;
+  top: 42px;
   left: 123px;
   position: absolute;
   transform: rotate(90deg);
 }
-
 
 
 @media (max-width: 800px) {
@@ -148,16 +168,51 @@ main {
   .img img {
     border-radius: 15px 15px 0 0;
     max-width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
   }
   .contain {
     border-radius: 0 0 15px 15px;
- 
   }
+   button {
+    right: 70px;  
+  }
+  .share-redes {
+    right: -12px;
 
-
+  }
 }
 
 @media (max-width: 400px) {
+  .contain h1 {
+    font-size: 1.5rem;  }
+  .contain p {
+    margin-bottom: 45px;
+  }
+  .share {
+    display: none;
+  }
+  .share-redes {
+    grid-template-columns: repeat(4, auto) 60px;
+
+    display: grid;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 15px 15px;
+  }
+  .share-redes::after {
+  content: "";
+  }
+  button {
+    bottom: 12px;
+    right: 40px; 
+    background: var(--Desaturated-Dark-Blue);
+    background-image: url("./images/icon-share-white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+  
+  }
+
 }
