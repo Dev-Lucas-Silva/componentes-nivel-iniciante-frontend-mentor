@@ -43,7 +43,7 @@ img {
 
 main {
   background: linear-gradient(hsl(210, 46%, 95%), hsl(212, 23%, 69%));
-  padding: 50px calc((100% - 1440px) / 2);
+  padding: 85px calc((100% - 1440px) / 2);
 }
 
 .container {
@@ -105,7 +105,7 @@ button {
   right: 40px;
 }
 
-.button-ativo {
+.js .button-ativo {
   width: 30px;
   height: 30px;
   border: none;
@@ -118,8 +118,21 @@ button {
   background-size: 15px;
 
 }
+.share-redes1 {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 15px;
+  border-radius: 15px;
+  padding: 15px 30px;
+  background: var(--Very-Dark-Grayish-Blue);
+  align-items: center;
+  position: relative;
+  position: absolute;
+  bottom: -12px;
+  right: -42px;
+}
 
-.share-redes {
+.share-redes2 {
   display: grid;
   grid-template-columns: repeat(4, auto);
   gap: 15px;
@@ -134,19 +147,19 @@ button {
   display: none;
 }
 
-.share-ativo {
+.js .share-ativo {
   display: grid;
 }
 
-.share-redes a {
+.share-redes1 a, .share-redes2 {
   text-transform: uppercase;
 }
 
-.share-redes img {
+.share-redes1 img, .share-redes2 img {
   width: 25px;
 }
 
-.share-redes::after {
+.share-redes2::after {
   content: url("./images/play-solid.svg");
   display: block;
   width: 25px;
@@ -184,6 +197,9 @@ button {
 }
 
 @media (max-width: 400px) {
+  .contain {
+    padding: 20px;
+  }
   .contain h1 {
     font-size: 1.5rem;  }
   .contain p {
@@ -194,7 +210,6 @@ button {
   }
   .share-redes {
     grid-template-columns: repeat(4, auto) 60px;
-
     display: grid;
     bottom: 0;
     left: 0;
@@ -211,8 +226,7 @@ button {
     background-image: url("./images/icon-share-white.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 15px;
-  
+    background-size: 15px;  
   }
 
 }

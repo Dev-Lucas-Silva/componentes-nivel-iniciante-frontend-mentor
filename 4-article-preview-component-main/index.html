@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+  <script>document.documentElement.className += ' js';</script>
+  <link rel="preload" href="style.css" as="style">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -16,6 +18,9 @@
 
 <body>
   <main>
+    <a style="text-decoration: underline;color: #000;position: absolute;top: 0;left: 0;" href="https://github.com/Dev-Lucas-Silva/projetos-nivel-iniciante/tree/main/2-interactive-rating-component-main">Link para repositório no GitHub</a>
+    <a style="margin-left: 300px;text-decoration: underline;color: #000;position: absolute;top: 0;left: 0;" href="../index.html">Voltar</a>
+
     <div class="container">
       <div class="img"><img src="./images/drawers.jpg" alt="drawers" width="660" height="528"></div>
       <div class="contain">
@@ -30,7 +35,7 @@
             <span class="cor-1">28 Jun 2020</span>
           </div>
         </div>
-        <div class="share-redes">
+        <div class="share-redes1">
           <a class="cor-1">Share</a>
           <img src="./images/icon-facebook.svg" alt="share facebook" width="20" height="20">
           <img src="./images/icon-twitter.svg" alt="share twitter" width="20" height="17">
@@ -46,7 +51,11 @@
 
 <script>
 const buttonshare = document.querySelector(".contain button");
-const shareRedes = document.querySelector(".share-redes")
+const shareRedes = document.querySelector(".share-redes1");
+
+shareRedes.classList.remove("share-redes1");
+shareRedes.classList.add("share-redes2");
+
 function ativarshare(e){
   shareRedes.classList.toggle("share-ativo");
   if(window.matchMedia( '(min-width: 400px)' ).matches){
@@ -54,7 +63,7 @@ function ativarshare(e){
   }
 }
 
-buttonshare.addEventListener("click", ativarshare)
+buttonshare.addEventListener("click", ativarshare);
 
 </script>
 
