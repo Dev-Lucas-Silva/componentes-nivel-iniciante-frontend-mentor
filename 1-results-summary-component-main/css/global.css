@@ -85,6 +85,7 @@ img {
 
 .summary {
   padding: 40px;
+  height: 465px;
 }
 
 .summary h3 {
@@ -95,6 +96,7 @@ img {
   display: grid;
   gap: 15px;
   margin-bottom: 30px;
+  height: 275px;
 }
 
 .summary li {
@@ -103,6 +105,7 @@ img {
   align-items: center;
   padding: 15px 10px;
   border-radius: 8px;
+  height: 58;
 }
 
 .summary li:nth-child(1) {

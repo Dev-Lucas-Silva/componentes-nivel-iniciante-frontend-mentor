@@ -37,7 +37,7 @@
         <h3 class="Dark-gray-blue">Summary</h3>
         <ul>
         </ul>
-        <a href="index.html">Continue</a>
+        <a href="">Continue</a>
       </div>
     </div>
   </section>
@@ -47,6 +47,8 @@
     fetch("data.json").then((response) => {
       response.json().then((dados) => {
         dados.usuarios.map((usuario) => {
+          usuario.score = 0;
+          usuario.score.lenght;
           ul.innerHTML += `<li>
             <p class="summary-img Light-red"><img src="${usuario.icon}" alt="" width="20" height="20">${usuario.category}</p>
             <p>${usuario.score} <span class="Light-lavender"> / 100</span></p>

@@ -192,10 +192,10 @@ button {
   .contain {
     border-radius: 0 0 15px 15px;
   }
-  button {
-    right: 70px;
+   .button {
+    right: 68px;
   }
-  .share-redes {
+  .share-redes, .share-redes2 {
     right: -12px;
   }
 }
@@ -213,10 +213,14 @@ button {
   .share {
     display: none;
   }
+  .share-redes2 {
+    bottom: 80px;
+
+  }
   .share-redes {
     grid-template-columns: repeat(4, auto) 60px;
     display: grid;
-    bottom: 0;
+    bottom: 50px;
     left: 0;
     right: 0;
     border-radius: 0 0 15px 15px;
@@ -224,13 +228,34 @@ button {
   .share-redes::after {
     content: "";
   }
-  button {
-    bottom: 12px;
+  .share-redes2 {
+    grid-template-columns: repeat(4, auto) 60px;
+    display: grid;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 15px 15px;
+  }
+  .share-redes2::after {
+    content: "";
+  }
+
+   button, .button-ativo{
+    bottom: 11px;
     right: 40px;
     background: var(--Desaturated-Dark-Blue);
     background-image: url("./images/icon-share-white.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 15px;
+  }
+}
+@media (max-width: 320px) {
+  button, .button-ativo{
+    right: 15px;
+  }
+  .share-redes2 {
+    padding: 15px 15px;
+    gap: 10px;
   }
 }
