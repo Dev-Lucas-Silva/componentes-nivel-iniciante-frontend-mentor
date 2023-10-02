@@ -49,7 +49,7 @@ p {
   text-transform: uppercase;
 }
 
-.content span {
+.content h1 span {
   color: hsl(0, 36%, 70%);
   font-weight: 100;
 }
@@ -61,18 +61,16 @@ p {
 
 .content input {
   padding: 20px 30px;
-  border: solid 1px hsl(0, 6%, 24%, 20%);
+  border: solid 2px hsl(0, 6%, 24%, 20%);
   border-radius: 30px;
   width: 100%;
   background: transparent;
+  position: relative;
 }
 
 .content input::placeholder {
-  color: hsl(0, 36%, 70%);
-}
-
-[type="email"]:focus {
-  border: solid 1px hsl(0, 6%, 24%, 20%);
+  color: hsl(0, 6%, 24%, 20%);
+  font-weight: bold;
 }
 
 form {
@@ -83,7 +81,7 @@ form {
 
 .content button {
   position: absolute;
-  height: 58px;
+  height: 60px;
   width: 80px;
   cursor: pointer;
   border: none;
@@ -92,11 +90,42 @@ form {
     linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   background-repeat: no-repeat;
   background-position: center;
-  top: 0;
-  right: 0px;
+  top: -1px;
+  right: -1px;
+  box-shadow: 1px 10px 20px hsl(0, 6%, 24%, 20%);
 }
-.content-img {
+
+[type="email"]:invalid + button::after {
+  content: 'Please provide a valid email';
+  display: block;
+  color: hsl(0, 50%, 60%);
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: -22px;
+  left: -265px;
 }
+
+
+
+[type="email"]:invalid + button::before {
+  content: url(./images/icon-error.svg);
+  left: -35px;
+  top: 18px;
+  position: absolute;
+}
+
+[type="email"]:invalid {
+  border: solid 2px hsl(0, 93%, 68%);
+}
+
+[type="email"]:invalid + button {
+  box-shadow: 1px 10px 20px hsl(0, 6%, 24%, 30%);
+  background: url(./images/icon-arrow.svg),
+    linear-gradient(135deg, hsl(0, 80%, 90%) 80%, hsl(0, 74%, 80%));
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .content-img img {
   width: 100%;
   max-height: 750px;
@@ -112,8 +141,6 @@ form {
 @media (max-width: 1000px) {
   .content {
     padding: 50px 50px;
-  }
-  .content-img img {
   }
 }
 
@@ -136,8 +163,9 @@ form {
     height: 300px;
     margin-bottom: 50px;
   }
-  .content p, h1 {
-    text-align: center;  
+  .content p,
+  h1 {
+    text-align: center;
   }
   .content {
     display: grid;
@@ -150,7 +178,6 @@ form {
     padding: 50px 30px;
   }
   .content input {
-    min-width: 315px ;
+    min-width: 315px;
   }
-} 
-
+}
