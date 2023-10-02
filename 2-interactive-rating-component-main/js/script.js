@@ -1,5 +1,7 @@
-const formulario = document.querySelector("form");
-const conteudo = document.querySelector(".container");
+function envioDoFormulario() {
+  const formulario = document.querySelector("form");
+  const conteudo = document.querySelector(".container");
+ if(formulario && conteudo) {
 
 function formularioEnviado() {
   conteudo.innerHTML = `<div class="container-resposta"><img src="./images/illustration-thank-you.svg" alt="">
@@ -22,3 +24,6 @@ function enviarFormulario(event) {
 }
 
 formulario.addEventListener("submit", enviarFormulario);
+}
+}
+envioDoFormulario()

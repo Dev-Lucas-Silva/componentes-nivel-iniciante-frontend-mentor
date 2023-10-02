@@ -45,7 +45,7 @@ img {
   padding: 30px;
   border-radius: 30px;
   display: grid;
-  height: 443px;
+  min-height: 350px;
 }
 
 
@@ -125,6 +125,7 @@ input[type="radio"] {
   display: grid;
   justify-items: center;
   text-align: center;
+  align-items: center;
 }
 
 .container-resposta img {
@@ -136,6 +137,7 @@ input[type="radio"] {
   padding: 10px 20px;
   background-color: hsl(213, 19%, 20%);
   border-radius: 30px;
+  margin-bottom: 35px;
 }
 
 @media (max-width: 400px) {
@@ -144,7 +146,7 @@ input[type="radio"] {
   }
   .container {
     padding: 20px;
-  }
+  }    
   .estrela-img,.container h1 {
     margin-bottom: 20px;
   }
