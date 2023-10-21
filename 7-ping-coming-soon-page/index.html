@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Ping coming soon page</title>
-  <script src="./script.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
@@ -15,15 +14,29 @@
 </head>
 
 <body>
+  <section class="content">
+    <img class="logo" src="./images/logo.svg" alt="ping">
+    <div class="intro">
+      <h1>We are launching </h1>
+      <h1>soon!</h1>
+    </div>
+    <p class="p-intro">Subscribe and get notified</p>
+    <form action="">
+      <input type="email" name="" id="" placeholder="You email address..." oninvalid="setCustomValidity(' ')" required>
+      <button type="submit">Notify Me</button>
+    </form>
+    <img class="dashboard" src="./images/illustration-dashboard.png" alt="illustration-dashboard" width="1280" height="782">
+    <footer>
+      <div class="Notifyme">
+        <a href="./"><img src="./images/facebook.svg" alt="facebook" width="16" height="16"></a>
+        <a href="./"><img src="./images/twitter.svg" alt="twitter" width="16" height="16"></a>
+        <a href="./"><img src="./images/instagram.svg" alt="instagram" width="16" height="16"></a>
+      </div>
+      <p>© Copyright Ping. All rights reserved.</p>
+    </footer>
+  </section>
 
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
+  <script src="./script.js"></script>
 </body>
 
 </html>

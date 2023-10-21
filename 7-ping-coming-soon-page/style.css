@@ -1,3 +1,120 @@
 body {
   margin: 0;
-  font-family: 'Libre Franklin', sans-serif;}
+  font-family: "Libre Franklin", sans-serif;
+}
+
+h1,
+p,
+form,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+  display: grid;
+  justify-items: center;
+}
+
+.dashboard,
+.logo {
+  margin: 50px 0;
+}
+
+.intro {
+  display: flex;
+  gap: 5px;
+}
+
+.intro h1:first-child {
+  display: inline;
+  color: hsl(0, 0%, 59%);
+  font-weight: 100;
+  margin-bottom: 20px;
+  letter-spacing: 0.075rem;
+}
+
+.p-intro {
+  margin-bottom: 20px;
+  color: hsl(209, 33%, 12%);
+  font-size: 0.875rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+form input {
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid hsl(0, 0%, 59%, 50%);
+  width: 250px;
+}
+
+[type="email"]::placeholder {
+  color: hsl(0, 0%, 59%, 50%);
+  font-size: 0.7rem;
+  padding-left: 10px;
+}
+
+form button {
+  padding: 10px 40px;
+  border-radius: 40px;
+  border: none;
+  background: hsl(223, 87%, 63%);
+  color: #ffffff;
+  font-size: 0.7rem;
+  box-shadow: 1px 1px 5px hsl(0, 0%, 59%, 50%);
+  cursor: pointer;
+  position: relative;
+}
+
+form button:hover {
+  background: hsl(223, 87%, 63%, 80%);
+}
+
+[type="email"]:invalid {
+  border: solid 1px hsl(0, 93%, 68%);
+}
+
+[type="email"]:invalid + button::after {
+  content: "Please provide a valid email";
+  display: block;
+  color: hsl(0, 50%, 60%);
+  font-size: 0.7rem;
+  position: absolute;
+  left: -260px;
+  top: 45px;
+}
+
+.Notifyme {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.Notifyme a {
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 59%, 20%);
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 20px;
+}
+
+.content footer {
+  color: hsl(0, 0%, 59%);
+  font-size: 0.875rem;
+}
