@@ -6,9 +6,19 @@ body {
 h1,
 p,
 form,
-a {
+a,
+ul {
   margin: 0;
   padding: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 img {
@@ -54,6 +64,7 @@ form {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  position: relative;
 }
 
 form input {
@@ -85,10 +96,6 @@ form button:hover {
   background: hsl(223, 87%, 63%, 80%);
 }
 
-[type="email"]:invalid {
-  border: solid 1px hsl(0, 93%, 68%);
-}
-
 [type="email"]:invalid + button::after {
   content: "Please provide a valid email";
   display: block;
@@ -99,19 +106,67 @@ form button:hover {
   top: 45px;
 }
 
+[type="email"]:invalid {
+  border: solid 1px hsl(0, 93%, 68%);
+}
+
+
 .Notifyme {
   display: flex;
   gap: 20px;
   justify-content: center;
 }
+.Notifyme li {
+  margin-bottom: 40px;
+}
 
-.Notifyme a {
-  padding: 10px;
+.Notifyme li a {
+  display: block;
+  padding: 16px;
   border-radius: 50%;
   border: 1px solid hsl(0, 0%, 59%, 20%);
-  align-self: center;
-  justify-self: center;
-  margin-bottom: 20px;
+}
+
+.Notifyme li:nth-child(1) a {
+  background: url("./images/facebook.svg");
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Notifyme li:nth-child(1) a:hover {
+  background:url("./images/facebook-white.svg"), hsl(223, 87%, 63%);
+  background-size:  10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Notifyme li:nth-child(2) a {
+  background: url("./images/twitter.svg");
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Notifyme li:nth-child(2) a:hover {
+  background:url("./images/twitter-white.svg"), hsl(223, 87%, 63%);
+  background-size:  16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Notifyme li:nth-child(3) a {
+  background: url("./images/instagram.svg");
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Notifyme li:nth-child(3) a:hover {
+  background:url("./images/instagram-white.svg"), hsl(223, 87%, 63%);
+  background-size:  16px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .content footer {
