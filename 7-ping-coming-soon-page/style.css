@@ -95,6 +95,10 @@ img {
   background: hsl(223, 87%, 63%, 80%);
 }
 
+.form-notify [type="email"]:focus {
+  outline: none;
+}
+
 .form-notify [type="email"]:invalid + button::after {
   content: "Please provide a valid email";
   display: block;
@@ -108,7 +112,6 @@ img {
 .form-notify [type="email"]:invalid {
   border: solid 1px hsl(0, 93%, 68%);
 }
-
 
 .Notifyme {
   display: flex;
@@ -134,8 +137,8 @@ img {
 }
 
 .Notifyme li:nth-child(1) a:hover {
-  background:url("./images/facebook-white.svg"), hsl(223, 87%, 63%);
-  background-size:  10px;
+  background: url("./images/facebook-white.svg"), hsl(223, 87%, 63%);
+  background-size: 10px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -148,8 +151,8 @@ img {
 }
 
 .Notifyme li:nth-child(2) a:hover {
-  background:url("./images/twitter-white.svg"), hsl(223, 87%, 63%);
-  background-size:  16px;
+  background: url("./images/twitter-white.svg"), hsl(223, 87%, 63%);
+  background-size: 16px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -162,8 +165,8 @@ img {
 }
 
 .Notifyme li:nth-child(3) a:hover {
-  background:url("./images/instagram-white.svg"), hsl(223, 87%, 63%);
-  background-size:  16px;
+  background: url("./images/instagram-white.svg"), hsl(223, 87%, 63%);
+  background-size: 16px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -172,4 +175,18 @@ img {
   color: hsl(0, 0%, 59%);
   font-size: 0.875rem;
   margin-bottom: 30px;
+}
+
+@media (max-width: 500px) {
+  .form-notify {
+    flex-direction: column;
+  }
+  .form-notify:invalid {
+    gap: 40px;
+  }
+  .form-notify [type="email"]:invalid + button::after {
+    position: absolute;
+    top: -35px;
+    left: 60px;
+  }
 }

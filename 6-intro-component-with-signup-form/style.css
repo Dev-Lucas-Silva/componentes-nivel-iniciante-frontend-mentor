@@ -1,4 +1,159 @@
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
+
+h1,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content-bg {
+  background: no-repeat center hsl(0, 100%, 74%)
+    url("./images/bg-intro-desktop.png");
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 85px calc((100% - 1200px) / 2);
+}
+
+.intro {
+  display: grid;
+  align-content: center;
+  padding: 30px;
+  color: #ffffff;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  max-width: 15ch;
+  line-height: 3.5rem;
+}
+
+.intro p {
+  max-width: 4 9ch;
+}
+
+.form {
+  padding: 30px;
+  text-align: center;
+  max-width: 475px;
+}
+
+.try-it-free {
+  padding: 10px;
+  background: hsl(248, 32%, 49%);
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  color: #ffffff;
+  box-shadow: 0 6px 2px 0 hsl(249, 10%, 26%, 20%);
+  max-width: 515px;
+
+}
+
+.try-it-free span:nth-child(2) {
+  color: hsl(246, 25%, 77%);
+}
+
+.form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 2px 0 hsl(249, 10%, 26%, 20%);
+}
+
+.form form {
+  display: grid;
+  gap: 15px;
+}
+
+.form form input {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid hsl(246, 25%, 77%);
+}
+
+.form form input:focus {
+  outline: none;
+  border: solid 1px hsl(249, 10%, 26%);
+}
+
+.form button {
+  border: none;
+  padding: 15px;
+  background: hsl(154, 59%, 51%);
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  color: #ffffff;
+  box-shadow: 0 6px 2px 0 hsl(249, 10%, 26%, 20%);
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form span {
+  color: hsl(246, 25%, 77%);
+  font-size: 0.75rem;
+}
+
+.form span:last-child {
+  color: hsl(0, 100%, 74%);
+  font-size: 0.75rem;
+}
+
+/*
+.form form input:invalid {
+  border: solid 1px hsl(0, 93%, 68%);
+
+}
+
+[type="email"]:invalid + button::after {
+  content: 'Please provide a valid email';
+  display: block;
+  color: hsl(0, 50%, 60%);
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: -22px;
+  left: -265px;
+}
+
+
+
+[type="email"]:invalid + button::before {
+  content: url(./images/icon-error.svg);
+  left: -35px;
+  top: 18px;
+  position: absolute;
+}
+
+[type="email"]:invalid {
+  border: solid 1px hsl(0, 93%, 68%);
+}
+
+[type="email"]:invalid + button {
+  box-shadow: 1px 10px 20px hsl(0, 6%, 24%, 30%);
+  background: url(./images/icon-arrow.svg),
+    linear-gradient(135deg, hsl(0, 80%, 90%) 80%, hsl(0, 74%, 80%));
+  background-repeat: no-repeat;
+  background-position: center;
+}
+*/
