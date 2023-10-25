@@ -2,22 +2,22 @@
   "usuarios": [
     {
       "category": "Reaction",
-      "score": 80,
+      "scored": "80",
       "icon": "./imagens/icon-reaction.svg"
     },
     {
       "category": "Memory",
-      "score": 92,
+      "scored": 92,
       "icon": "./imagens/icon-memory.svg"
     },
     {
       "category": "Verbal",
-      "score": 61,
+      "scored": 61,
       "icon": "./imagens/icon-verbal.svg"
     },
     {
       "category": "Visual",
-      "score": 72,
+      "scored": 72,
       "icon": "./imagens/icon-visual.svg"
     }
   ]

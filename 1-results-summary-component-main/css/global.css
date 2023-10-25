@@ -37,14 +37,14 @@ img {
 .container {
   max-width: 800px;
   margin: 0 auto;
-  margin: 100px auto;
+  margin: 50px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-radius: 40px;
   box-shadow: 0px 0px 15px -10px var(--Persian-blue-circle);
 }
 
-.result {     
+.result {
   border-radius: 40px;
   padding: 40px;
   text-align: center;
@@ -110,17 +110,21 @@ img {
 
 .summary li:nth-child(1) {
   background-color: hsl(0, 100%, 67%, 5%);
+  color: hsl(0, 100%, 67%);
 }
 
 .summary li:nth-child(2) {
   background-color: hsl(39, 100%, 56%, 5%);
+  color: hsl(39, 100%, 56%);
 }
 .summary li:nth-child(3) {
   background-color: hsl(166, 100%, 37%, 5%);
+  color: hsl(166, 100%, 37%);
 }
 
 .summary li:nth-child(4) {
   background-color: hsl(234, 85%, 45%, 5%);
+  color: hsl(234, 85%, 45%);
 }
 
 .summary .summary-img {
