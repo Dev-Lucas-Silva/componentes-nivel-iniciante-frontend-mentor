@@ -105,6 +105,7 @@ img {
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+  position: relative;
 }
 
 .form span {
@@ -117,6 +118,37 @@ img {
   font-size: 0.75rem;
 }
 
+.form form input:invalid:focus {
+  border: solid 1px hsl(0, 93%, 68%);
+
+}
+
+.form [type="email"]:invalid:focus ~ button::after {
+  content: 'Please provide a valid email';
+  text-transform:lowercase;
+  display: block;
+  color: hsl(0, 50%, 60%);
+  font-size: 0.7rem;
+  position: absolute;
+  top: -105px;
+  right: 50px;
+}
+
+.form [type="email"]:invalid:focus ~ button::before {
+  content: url("./images/icon-error.svg");
+  right: 10px;
+  top: -112px;
+  position: absolute;
+}
+/*
+.form [type="email"]:invalid ~ button {
+  box-shadow: 1px 10px 20px hsl(0, 6%, 24%, 30%);
+  background: url("./images/icon-arrow.svg"),
+    linear-gradient(135deg, hsl(0, 80%, 90%) 80%, hsl(0, 74%, 80%));
+  background-repeat: no-repeat;
+  background-position: center;
+}
+*/
 @media (max-width: 800px) {
   .content-bg {
     grid-template-columns: 1fr;
@@ -129,40 +161,3 @@ img {
   text-align: center;
   }
 }
-/*
-.form form input:invalid {
-  border: solid 1px hsl(0, 93%, 68%);
-
-}
-
-[type="email"]:invalid + button::after {
-  content: 'Please provide a valid email';
-  display: block;
-  color: hsl(0, 50%, 60%);
-  font-size: 0.8rem;
-  position: absolute;
-  bottom: -22px;
-  left: -265px;
-}
-
-
-
-[type="email"]:invalid + button::before {
-  content: url(./images/icon-error.svg);
-  left: -35px;
-  top: 18px;
-  position: absolute;
-}
-
-[type="email"]:invalid {
-  border: solid 1px hsl(0, 93%, 68%);
-}
-
-[type="email"]:invalid + button {
-  box-shadow: 1px 10px 20px hsl(0, 6%, 24%, 30%);
-  background: url(./images/icon-arrow.svg),
-    linear-gradient(135deg, hsl(0, 80%, 90%) 80%, hsl(0, 74%, 80%));
-  background-repeat: no-repeat;
-  background-position: center;
-}
-*/

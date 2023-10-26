@@ -99,7 +99,7 @@ img {
   outline: none;
 }
 
-.form-notify [type="email"]:invalid + button::after {
+.form-notify [type="email"]:invalid:focus + button::after {
   content: "Please provide a valid email";
   display: block;
   color: hsl(0, 50%, 60%);
@@ -109,7 +109,7 @@ img {
   top: 45px;
 }
 
-.form-notify [type="email"]:invalid {
+.form-notify [type="email"]:invalid:focus {
   border: solid 1px hsl(0, 93%, 68%);
 }
 

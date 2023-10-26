@@ -95,8 +95,8 @@ p {
   box-shadow: 1px 10px 20px hsl(0, 6%, 24%, 20%);
 }
 
-.content [type="email"]:invalid + button::after {
-  content: 'Please provide a valid email';
+.content [type="email"]:invalid:focus + button::after {
+  content: "Please provide a valid email";
   display: block;
   color: hsl(0, 50%, 60%);
   font-size: 0.8rem;
@@ -109,18 +109,18 @@ p {
   outline: none;
 }
 
-.content [type="email"]:invalid + button::before {
+.content [type="email"]:invalid:focus + button::before {
   content: url(./images/icon-error.svg);
   left: -35px;
   top: 18px;
   position: absolute;
 }
 
-.content [type="email"]:invalid {
+.content [type="email"]:invalid:focus {
   border: solid 2px hsl(0, 93%, 68%);
 }
 
-.content [type="email"]:invalid + button {
+.content [type="email"]:invalid:focus + button {
   box-shadow: 1px 10px 20px hsl(0, 6%, 24%, 30%);
   background: url(./images/icon-arrow.svg),
     linear-gradient(135deg, hsl(0, 80%, 90%) 80%, hsl(0, 74%, 80%));
@@ -146,6 +146,12 @@ p {
   }
 }
 
+@media (max-width: 800px) {
+  .content [type="email"]:invalid:focus + button::after {
+    left: -200px;
+
+  }
+}
 @media (max-width: 700px) {
   .container {
     grid-template-columns: 1fr;
