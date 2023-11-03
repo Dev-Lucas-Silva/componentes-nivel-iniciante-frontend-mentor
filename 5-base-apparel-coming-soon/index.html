@@ -10,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="preload" href="style.css" as="style">
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -26,10 +25,11 @@
           Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
-        <form action="" >
-          <input type="email" name="email" id="email" placeholder="Email Address" oninvalid="setCustomValidity(' ')" required>
-          <button type="submit"></button>
+        <form name="email" action="" id="emai">
+          <input type="email" name="email" id="email" placeholder="Email Address" oninvalid="setCustomValidity('')" required>
+          <button></button>
         </form>
+        <span class="erro"></span>
       </div>
       <div class="content-img">
         <img src="./images/hero-desktop.jpg" alt="" width="610" height="800">

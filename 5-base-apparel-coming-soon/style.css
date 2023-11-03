@@ -27,6 +27,7 @@ img {
   max-width: 1440px;
   margin: 0 auto;
 }
+
 .content {
   padding: 50px 150px;
 }
@@ -61,15 +62,19 @@ p {
 
 .content input {
   padding: 20px 30px;
-  border: solid 2px hsl(0, 6%, 24%, 20%);
+  border: solid 2px hsl(0, 6%, 24%, 40%);
   border-radius: 30px;
   width: 100%;
   background: transparent;
   position: relative;
 }
 
+.content [type="email"]:focus {
+  outline: none;
+} 
+
 .content input::placeholder {
-  color: hsl(0, 6%, 24%, 20%);
+  color: hsl(0, 6%, 24%, 50%);
   font-weight: bold;
 }
 
@@ -95,32 +100,27 @@ p {
   box-shadow: 1px 10px 20px hsl(0, 6%, 24%, 20%);
 }
 
-.content [type="email"]:invalid:focus + button::after {
-  content: "Please provide a valid email";
+.erro {
   display: block;
   color: hsl(0, 50%, 60%);
   font-size: 0.8rem;
-  position: absolute;
-  bottom: -22px;
-  left: -265px;
+  justify-self: start;
+  margin: 10px 30px;
 }
 
-.content [type="email"]:focus {
-  outline: none;
+.content input.invalido {
+  border: solid 2px hsl(0, 93%, 68%);
 }
 
-.content [type="email"]:invalid:focus + button::before {
+.content [type="email"].invalido + button::before {
   content: url(./images/icon-error.svg);
   left: -35px;
   top: 18px;
   position: absolute;
 }
 
-.content [type="email"]:invalid:focus {
-  border: solid 2px hsl(0, 93%, 68%);
-}
 
-.content [type="email"]:invalid:focus + button {
+.content [type="email"] .invalido + button {
   box-shadow: 1px 10px 20px hsl(0, 6%, 24%, 30%);
   background: url(./images/icon-arrow.svg),
     linear-gradient(135deg, hsl(0, 80%, 90%) 80%, hsl(0, 74%, 80%));
@@ -187,5 +187,8 @@ p {
   }
   .content input {
     min-width: 315px;
+  }
+  .erro {
+    justify-self: center;
   }
 }
