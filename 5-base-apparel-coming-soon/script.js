@@ -1,4 +1,4 @@
-const form = document.getElementById("email");
+const form = document.getElementById("email-address");
 const erro = document.querySelector(".erro");
 
 function handleChangeValid(event) {
@@ -6,7 +6,7 @@ function handleChangeValid(event) {
   if (target.checkValidity()) {
     target.classList.remove("invalido");
     erro.innerText = "";
-    console.log("target");
+    console.log(target.checkValidity());
   }
 }
 
@@ -16,7 +16,8 @@ function handleChange(event) {
     target.classList.add("invalido");
     target.setCustomValidity("Please provide a valid email");
     erro.innerText = target.validationMessage;
-    console.log("tcdcdcdget");
+    console.log(target.checkValidity());
+
   }
 }
 
