@@ -23,12 +23,13 @@
     <div class="form-content">
       <div class="try-it-free"><span>Try it free 7 days</span><span> then $20/mo. thereafter</span></div>
       <div class="form">
-        <form action="">
+        <form id="cadastro">
           <input type="text" name="FirstName" id="FirstName" placeholder="First Name" required>
           <input type="text" name="LastName" id="LastName" placeholder="Last Name" required>
-          <input type="email" name="email" id="email" placeholder="Email Address" oninvalid="setCustomValidity(' ')" required>
+          <input type="email" name="email" id="email" placeholder="Email Address" required>
+          <span class="erro"></span>
           <input type="password" name="password" id="password" placeholder="Password" required>
-          <button>Claim your free trial</button>
+          <button type="submit">Claim your free trial</button>
         </form>
         <span>By clicking the button, you are agreeing to our</span>
         <span>Terms and Services</span>
