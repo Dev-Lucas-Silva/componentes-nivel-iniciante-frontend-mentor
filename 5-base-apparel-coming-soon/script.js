@@ -1,22 +1,17 @@
 const form = document.getElementById("email-address");
 const erro = document.querySelector(".erro");
 
-function handleChangeValid(event) {
-  const target = event.target;
-  if (target.checkValidity()) {
-    target.classList.remove("invalido");
-    erro.innerText = "";
-  }
-}
 
 function handleChange(event) {
   const target = event.target;
-  if (!target.checkValidity()) {
+  if (!target.ValidityState()) {
     target.classList.add("invalido");
-    target.setCustomValidity("Please provide a valid email");
-    erro.innerText = target.validationMessage;
+    target.setCustomValidity(" ");
+    erro.innerText = "Please provide a valid email";
   }
+  else {
+    target.classList.remove("invalido");
+  };
 }
 
 form.addEventListener("change", handleChange);
-form.addEventListener("change", handleChangeValid);

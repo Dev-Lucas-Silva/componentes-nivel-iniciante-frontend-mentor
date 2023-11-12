@@ -147,7 +147,7 @@ p {
 }
 
 @media (max-width: 800px) {
-  .content [type="email"]:invalid:focus + button::after {
+  .content [type="email"].invalido + button::after {
     left: -200px;
 
   }
